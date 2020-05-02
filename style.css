@@ -1,0 +1,23 @@
+body{
+    background: #FFFFFF;
+    color: #000000;
+    /*  font-family: "Courier New", Courier, monospace;*/
+    font-family: "Times new roman";
+    font-size: 100%;
+		/* font-size: 1.2em; */
+}
+table{
+    background: #FFFFFF;
+    color: #000000;
+    /*  font-family: "Courier New", Courier, monospace;*/
+    font-family: "Times new roman";
+    font-size: 100%;
+}
+
+div.myConf{
+    font-size: 120%;
+}
+
+div.myHeadings{
+    font-size: 110%;
+}
