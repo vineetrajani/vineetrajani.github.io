@@ -5,6 +5,7 @@ body{
     font-family: "Times new roman";
     font-size: 100%;
 }
+
 table{
     background: #3b3b3b;
     color: #ffffff;
@@ -16,7 +17,6 @@ div.myConf{
     font-size: 120%;
 		line-height: 1.2;
 }
-
 div.myHeadings{
     font-size: 110%;
 }
@@ -40,4 +40,8 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+
+hr{
+		border-color: #696969;
 }
