@@ -20,6 +20,9 @@ div.myConf{
 div.myHeadings{
     font-size: 110%;
 }
+div.sidepanel{
+    font-size: 110%;
+}
 
 a:link {
   color: orange;
@@ -43,5 +46,5 @@ a:active {
 }
 
 hr{
-		border-color: #696969;
+		border-color: #737373;
 }
