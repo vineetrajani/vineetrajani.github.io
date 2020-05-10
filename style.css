@@ -1,13 +1,13 @@
 body{
-    background: #FFFFFF;
-    color: #000000;
+    background: #3b3b3b;
+    color: #ffffff;
     /*  font-family: "Courier New", Courier, monospace;*/
     font-family: "Times new roman";
     font-size: 100%;
 }
 table{
-    background: #FFFFFF;
-    color: #000000;
+    background: #3b3b3b;
+    color: #ffffff;
     font-family: "Times new roman";
     font-size: 100%;
 }
@@ -21,9 +21,22 @@ div.myHeadings{
 }
 
 a:link {
+  color: orange;
+  background-color: transparent;
   text-decoration: none;
 }
-
+a:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
 a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
   text-decoration: underline;
 }
