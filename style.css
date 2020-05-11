@@ -23,6 +23,10 @@ div.myHeadings{
 div.sidepanel{
     font-size: 110%;
 }
+div.highlight{
+    color: #87cefa;
+		font-weight: bold;
+}
 
 a:link {
   color: orange;
