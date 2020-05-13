@@ -13,6 +13,10 @@ table{
     font-size: 100%;
 }
 
+div.homepage{
+		max-width: 1200px;
+    word-wrap: break-word;
+}
 div.myConf{
     font-size: 120%;
 		line-height: 1.2;
