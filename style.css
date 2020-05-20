@@ -33,17 +33,17 @@ div.highlight{
 }
 
 a:link {
-  color: orange;
+  color:  #ff7f00;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: orange;
+  color:  #ff7f00;
   background-color: transparent;
   text-decoration: none;
 }
 a:hover {
-  color: orange;
+  color:  #ff7f00;
   background-color: transparent;
   text-decoration: underline;
 }
