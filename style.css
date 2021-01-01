@@ -54,5 +54,8 @@ a:active {
 }
 
 hr{
-		border-color: #737373;
+		/* border-color: #737373; */
+		height: 1px;
+		width: 700;
+		align: center;
 }
