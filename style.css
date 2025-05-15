@@ -1,5 +1,6 @@
 body{
     background: #3b3b3b;
+    /* background: #474747; */
     color: #ffffff;
     /*  font-family: "Courier New", Courier, monospace;*/
     font-family: "Times new roman";
@@ -8,6 +9,7 @@ body{
 
 table{
     background: #3b3b3b;
+    /* background: #474747; */
     color: #ffffff;
     font-family: "Times new roman";
     font-size: 100%;
