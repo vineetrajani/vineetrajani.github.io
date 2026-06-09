@@ -1,0 +1,179 @@
+:root {
+    --bg-color: #3b3b3b;
+    --text-color: #ffffff;
+    --link-color:  #ff7f00;
+    /* --link-hover: #10434b; */
+    --border-color: #e6e4e2;
+    --sidebar-width: 200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+
+    /* Force scrollbar space to be always reserved */
+    overflow-y: scroll;
+}
+
+/* Responsive Layout Container */
+.container {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+
+    /* Anchor to the left side but keep a comfortable border margin */
+    margin-left: max(4rem, calc((100vw - 960px) / 2));
+    margin-right: auto;
+
+    padding: 3rem 2rem;
+    gap: 3.5rem;
+}
+
+/* div.sidepanel{ */
+/*     font-size: 140%; */
+/* } */
+
+div.myHeadings{
+    font-size: 140%;
+}
+
+div.highlight{
+    color: #87cefa;;
+		font-weight: bold;
+}
+
+
+/* Sidebar Column */
+aside {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+
+    /* ─── MAKE SIDEBAR FIX IN PLACE ─── */
+    position: sticky;
+    top: 3rem;              /* Aligns it perfectly with the top padding of the container */
+    max-height: calc(100vh - 6rem); /* Prevents sidebar from overflowing the viewport */
+    overflow-y: auto;       /* Adds an internal scrollbar *only* if your menu becomes massive */
+}
+
+aside h1 {
+    /* font-size: 1.4rem; */
+    font-size: 180%;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.2;
+}
+
+/* aside h1 a { */
+/*     color: var(--text-color); */
+/*     text-decoration: none; */
+/* } */
+
+aside nav ul li a {
+    font-size: 110%;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 0.6rem;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Main Content Column */
+main {
+    flex-grow: 1;
+    max-width: 680px;
+}
+
+main p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Informative callout block */
+.callout {
+    /* background-color: #b3b3b3; */
+    background-color: #696969;
+    border-left: 4px solid var(--link-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.callout p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Breakpoint for Mobile Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1.2rem;
+    }
+    aside {
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1.5rem;
+    }
+    main {
+        width: 100%;
+    }
+}
