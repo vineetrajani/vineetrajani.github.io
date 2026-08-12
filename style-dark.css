@@ -27,7 +27,8 @@ body {
 /* Responsive Layout Container */
 .container {
     display: flex;
-    max-width: 960px;
+    /* max-width: 960px; */
+		max-width: 1200px;
     width: 100%;
 
     /* Anchor to the left side but keep a comfortable border margin */
@@ -105,11 +106,38 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main Content Column */
+/* Ensure main expands and doesn't shrink */
 main {
-    flex-grow: 1;
-    max-width: 680px;
+    flex: 1 1 auto;      /* Allows main to grow and take up space */
+    max-width: 800px;    /* Increases room for long lines */
+    min-width: 0;        /* IMPORTANT: Prevents flex items from overflowing or crushing list items */
 }
+
+/* Ensure lists inside <main> use 100% of the available width */
+main ul {
+    width: 100%;
+    padding-left: 1.5rem; /* Standard indentation */
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+main li {
+    margin-bottom: 0.5rem;
+    word-break: normal;   /* Prevents aggressive line wrapping */
+    overflow-wrap: break-word;
+}
+
+/* Ensure bold text inside list items displays inline without wrapping blocks */
+main li b,
+main li strong {
+    font-weight: 600;
+}
+
+/* Main Content Column */
+/* main { */
+/*     flex-grow: 1; */
+/*     max-width: 800px; */
+/* } */
 
 main p {
     margin-top: 0;
@@ -128,14 +156,14 @@ h2 {
     padding-bottom: 0.3rem;
 }
 
-ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1.5rem;
-}
+/* ul { */
+/*     padding-left: 1.2rem; */
+/*     margin-bottom: 1.5rem; */
+/* } */
 
-li {
-    margin-bottom: 0.5rem;
-}
+/* li { */
+/*     margin-bottom: 0.5rem; */
+/* } */
 
 a {
     color: var(--link-color);
